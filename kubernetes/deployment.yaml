@@ -21,11 +21,11 @@ spec:
         app: ecsdemo-nodejs
     spec:
       containers:
-      - image: 299884705999.dkr.ecr.us-east-1.amazonaws.com/wion-backend:latest
+      - image: nginx
         imagePullPolicy: Always
         name: ecsdemo-nodejs
         ports:
-        - containerPort: 3000
+        - containerPort: 80
           protocol: TCP
-      imagePullSecrets:
-      - name: ecr-secret
+#      imagePullSecrets:
+#      - name: ecr-secret
