@@ -21,7 +21,7 @@ spec:
         app: ecsdemo-nodejs
     spec:
       containers:
-      - image: brentley/ecsdemo-nodejs:latest
+      - image: 299884705999.dkr.ecr.us-east-1.amazonaws.com/wion-backend:latest
         imagePullPolicy: Always
         name: ecsdemo-nodejs
         ports:
